@@ -1,0 +1,310 @@
+*,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar {
+    height: 102px;
+    backdrop-filter: blur(70px);
+}
+
+.navbar.fixed-top {
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    gap: 35px;
+}
+
+.menu .list-menu {
+    list-style: none;
+}
+
+.menu .list-menu a {
+    color: #374E9D;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+.btn-navbar {
+    background-color: #FCCC00;
+    border: none;
+    border-radius: 120px;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 500;
+    height: 48px;
+    width: 161px;
+}
+/* Navigation Bar Selesai */
+
+/* Section One */
+
+.section-one .title {
+    font-size: 52px;
+    font-weight: 700;
+    font-family: Pathway Extreme, sans-serif;
+    color: #161F3F;
+}
+
+.section-one .sub-title {
+    color: #848AA5;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Pathway Extreme, sans-serif;
+    line-height: 30px;
+}
+
+/* Section One Selesai */
+
+/* Section Product */
+#Product {
+    background-color: #2C3E7E;    
+}
+
+#Product .title {
+    color: #FFF;
+    font-size: 52px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 700;
+}
+
+#Product .sub-title {
+    color: #848AA5;
+    font-size: 20px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 100;
+}
+
+#Product .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-icon {
+    background-color: #848AA5;
+    border-radius: 50%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Product .wrap .card {
+    background-color: #161F3F;
+    width: 400px;
+    height: 381px;
+    /* margin: 30px; */
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 23px;    
+}
+
+#Product .card .title {
+    color: #FFF;
+    font-size: 20px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 700;
+    padding-top: 230px;
+}
+
+#Product .card .sub-title {
+    color: #848AA5;
+    font-size: 14px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 100;
+}
+/* Section Product Selesai */
+
+/* Section Event */
+
+#Event .title {
+    color: #10172F;
+    font-size: 52px;
+    font-family: Pathway Extreme, sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+#Event .sub-title {
+    color: #848AA5;
+    font-size: 20px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+#Event .card {
+    border: none;
+    border-radius: 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+
+#Event .card img {            
+    border-radius: 15px;
+}
+
+/* Section Event Selesai */
+
+/* Section Client */
+
+.client {
+    text-align: center;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    
+    color: #848AA5;
+}
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;    
+}
+
+.logos::before ,.logos::after {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFF);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #FFF);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+}
+/* Section Client End */
+
+/* Section Footer */
+#footer {
+    margin-top: 120px;
+}
+
+.footer-img img{
+    height: 29px;
+    margin-bottom: 52px;
+}
+
+.address img {
+    margin-bottom: 24px;
+    color: #848AA5;
+}
+
+.address ul{
+    list-style: none;
+}
+
+.address .title {
+    color: #10172F;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 300;
+}
+
+.address .title:hover {
+    color: #afafaf;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.address .copyright {
+    color: #848AA5;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    cursor: pointer;    
+}
+
+.menus-footer .title {
+    color: #10172F;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 400;
+    margin-bottom: 42px;
+}
+
+.menus-footer .sub-title a {
+    text-decoration: none;
+    color: #374E9D;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 500;         
+}
+
+.menus-footer p {
+    line-height: 10px;
+}
+
+.menus-footer .sub-title a:hover {
+    text-decoration: underline 1.8px solid #374E9D;    
+}
+
+.bg-footer {
+    float: right;
+}
+
+/* Footer Selesai */
+
+
+@media (max-width: 767px) {
+    .copyright {
+        display: none;
+    }
+
+    .img-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer ,.row {
+        text-align: center;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .menus-footer .title {        
+        padding-top: 60px;        
+    }
+}
